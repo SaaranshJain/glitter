@@ -1,0 +1,55 @@
+.content {
+    height: calc(100% - 4rem);
+    width: 100%;
+    display: grid;
+    place-items: center;
+    color: black;
+
+    form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 1rem;
+
+        input,
+        textarea {
+            font-size: large;
+            background: transparent;
+            border: 2px solid black;
+            border-radius: 12px;
+            padding: 5px 10px;
+            color: black;
+
+            &:focus {
+                outline: none;
+                background-color: #fec1ee;
+            }
+        }
+
+        input {
+            width: fit-content;
+            font-size: medium;
+        }
+
+        textarea {
+            width: 50vw;
+            height: 25vh;
+            max-height: 50vh;
+            max-width: 75vw;
+        }
+
+        :last-child {
+            background-color: transparent;
+            border: 2px solid black;
+            border-radius: 5px;
+            color: black;
+            font-size: medium;
+            padding: 2px 16px;
+
+            &:hover {
+                background-color: #fec1ee;
+            }
+        }
+    }
+}

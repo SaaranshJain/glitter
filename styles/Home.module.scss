@@ -1,0 +1,93 @@
+.content {
+    height: calc(100% - 4rem);
+    width: 100%;
+    display: grid;
+    place-items: center;
+    color: black;
+
+    div {
+        .login {
+            border: 2px solid black;
+            background: transparent;
+            border-radius: 5px;
+            color: black;
+            padding: 5px 10px;
+            margin-top: 10px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+
+            &:hover {
+                background-color: #fec1ee;
+            }
+        }
+    }
+
+    .fab {
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+        font-size: x-large;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        border: none;
+        background-color: darken(#fec1ee, 25%);
+        color: white;
+        display: grid;
+        place-items: center;
+    }
+
+    .gleetsContainer {
+        display: flex;
+        flex-direction: column;
+        place-self: start;
+        margin-top: 10vh;
+        margin-left: 10vw;
+
+        .gleet {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 2rem;
+            border: 2px solid darken(#fec1ee, 25%);
+            border-radius: 15px;
+            width: 75vw;
+            padding: 0.5rem;
+            background-color: #fec1ee;
+
+            .contentContainer {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+
+                :first-child {
+                    margin: 0;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    font-size: x-large;
+                    font-weight: 400;
+                    color: darken(#fec1ee, 50%);
+                    padding: 5px;
+                    border-radius: 10px;
+                    width: 100%;
+
+                    .pfp {
+                        aspect-ratio: 1/1;
+                        border-radius: 50%;
+                        width: 2.5rem;
+                        height: 2.5rem;
+                        padding: 0;
+                        margin-right: 1rem;
+                    }
+                }
+
+                :last-child {
+                    padding: 5px;
+                    padding-left: calc(5px + 3.5rem);
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
