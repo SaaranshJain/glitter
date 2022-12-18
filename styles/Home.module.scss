@@ -88,6 +88,26 @@
                     width: 100%;
                 }
             }
+
+            .deleteButton {
+                width: fit-content;
+                height: fit-content;
+                padding: 10px;
+                border: 2px solid #fc44cc;
+                border-radius: 15px;
+                background-color: #fec1ee;
+                cursor: pointer;
+                visibility: hidden;
+
+                > svg {
+                    width: 20px;
+                    height: 20px;
+
+                    > path {
+                        fill: white;
+                    }
+                }
+            }
         }
     }
 }

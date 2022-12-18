@@ -6,6 +6,9 @@ export interface Gleet {
     content: string;
     title: string;
     photoUrl: string;
+    email: string;
+    created: string;
+    id: string;
 }
 
 export interface State {
